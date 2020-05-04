@@ -5,8 +5,7 @@ set -o pipefail
 
 ROOT=$(cd "$(dirname "$0")" && pwd)
 
-#TARGET=${1:?Specify the target filename}
-TARGET=rootfs.tar
+TARGET=${1:?Specify the target filename}
 DIST=${2:-stable}
 
 LOGFILE=${TARGET}.log
